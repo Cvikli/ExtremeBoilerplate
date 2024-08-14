@@ -73,9 +73,9 @@ macro get(obj)  # obj of Dict... @get dictobj.["TD3_MINI", "TD5_BIG"]
 	obj.head ≠ :. && error("syntax: expected: `dictionary.[keys...]`.")
 		dict_obj = ((obj.args[1]))
 		dict_keys = ((obj.args[2].args[1].args))
-		println(obj)
-		println(dict_obj)
-		println(dict_keys)
+		# println(obj)
+		# println(dict_obj)
+		# println(dict_keys)
 		
 		:([$dict_obj[k] for k in $dict_keys])
 end
